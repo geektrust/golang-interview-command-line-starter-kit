@@ -7,10 +7,10 @@ This is a skeleton project structure which will help you start solving the probl
 
 ## Checking for correctness 
 
-- You can click on the `Test My Code` button from the interview application, which will run your solution against some preconfigured inputs and show you the output.
+- You can click on the `Run IO` button from the interview application, which will run your solution against some preconfigured inputs and show you the output.
 
 ## Building the executable
-- The executable will be built bu the command  `go build .`. 
+- The executable will be built by the command  `go build .`. 
 - This command will create an executable `golang-interview`. 
 
 ## Running the executable
