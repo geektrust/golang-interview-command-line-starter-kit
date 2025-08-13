@@ -9,21 +9,16 @@ import (
 func main() {
 	args := os.Args[1:]
 	if len(args) == 0 {
-		panic(fmt.Errorf("No command line args passed"))
+		panic(fmt.Errorf("no command line args passed"))
 	}
 	/*
 	 * Format of the 'args' array: [`<COMMAND_NAME_1> <ARG1> <ARG2> .. <ARG N>`, `<COMMAND_NAME_2> <ARG1> <ARG2> .. <ARG N>`]
-	 *  Example: ["PLACE_ORDER 101 Apple 5", "TOTAL_COST 101"]
-	 *
-	 * The code evaluator will execute this code by using the command
-	 * ./golang-interview 'PLACE_ORDER 101 Apple 5' 'TOTAL_COST 101'
 	 *
 	 * We loop through the list of commands passed in as input arguments and handle each one of them
 	 */
 	for _, arg := range args {
 		handle(arg)
 		//arg will have each command passed in the command line argumens
-
 	}
 
 }
